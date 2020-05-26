@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,body{
+            margin: 0;
+        }
+        .box{
+            width: calc(80% + 20px);
+            height: 120px;
+            background-color: rgb(209, 125, 163);
+        }
+
+        a::after{
+            content: "("attr(href)")";
+        }
+
+        .box::after{
+            content: attr(data-content) ;
+        }
+
+        h1:hover{
+            background-color: rgba(107, 173, 63, 0.664);
+        }
+
+        .box:active{
+            background-color: rgba(107, 173, 63, 0.664);
+        }
+
+        li:first-child{
+            color:chocolate;
+            font-size: 30px;
+        }
+        
+        li:last-child{
+            color: #ccc;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" data-content="this is my pink ku box"></div>
+    <a href="http://127.0.0.1:5500/funcion_css.html">CSS function</a>
+    <h1>css function</h1>
+
+<ul>
+    <li>var()</li>
+    <li>linear-gradient()</li>
+    <li>rgba()</li>
+    <li>rgb()</li>
+    <li>calc()</li>
+    <li>attr()</li>
+</ul>
+</body>
+</html>

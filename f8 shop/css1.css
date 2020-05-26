@@ -1,0 +1,14 @@
+/* Css variable */
+:root {
+    --text-color:red;
+
+}
+h1{
+    color: var(--text-color);
+}
+
+
+h1{
+    --my-color:pink;
+    color: var(--my-color);
+}
